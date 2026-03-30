@@ -35,7 +35,7 @@
     <header>
         <h1>❄️ Snow Bot Official❄️</h1>
         <a href="https://discord.com/oauth2/authorize?client_id=1067505203596775424" class="invite-btn">➕ Invite Snow to Your Server</a>
-        <p>A free discord bot for moderation, small activities and music commands.</p>
+        <p>A free discord bot for moderation, small activities and music commands. Snow Bot supports both - and / prefixes for all commands!</p>
         <p>On this web you can see the whole list of available commands. Also, you can manually invite the Snow Bot to your server by pressing the button above.</p>
     </header>
 
@@ -49,20 +49,28 @@
 
     <div class="category">
         <h2>🛡️ Moderation (Staff Only)</h2>
+        <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
+            ⚠️ These commands require specific permissions (Kick, Ban, or Manage Messages).
+        </p>
+
+        <div class="command">
+            <code>/setlogs [#channel]</code>
+            <span class="cmd-desc">Sets the destination for moderation logs. Leave blank to disable.</span>
+        </div>
         <div class="command">
             <code>-clear [amount]</code>
             <span class="cmd-desc">Deletes up to 100 messages in the current channel.</span>
         </div>
         <div class="command">
-            <code>-kick @user [reason]</code>
-            <span class="cmd-desc">Removes a member from the server.</span>
+            <code>/kick @user [reason]</code>
+            <span class="cmd-desc">Removes a member and logs the action to the mod-log channel.</span>
         </div>
         <div class="command">
-            <code>-ban @user [reason]</code>
-            <span class="cmd-desc">Permanently bans a member from the server.</span>
+            <code>/ban @user [reason]</code>
+            <span class="cmd-desc">Permanently bans a member and logs the action.</span>
         </div>
         <div class="command">
-            <code>-timeout @user [mins] [reason]</code>
+            <code>/timeout @user [mins] [reason]</code>
             <span class="cmd-desc">Prevents a user from talking for a set time.</span>
         </div>
     </div>
