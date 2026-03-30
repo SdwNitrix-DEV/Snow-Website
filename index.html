@@ -2,24 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Snow-BOT | Commands</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Bot | Official Commands</title>
     <style>
-        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 50px; }
-        .container { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 30px; display: inline-block; max-width: 600px; }
-        h1 { color: #58a6ff; }
-        .command-list { text-align: left; line-height: 1.8; }
-        code { background: #21262d; padding: 2px 5px; border-radius: 5px; color: #ffa657; }
+        :root {
+            --bg: #0b0e14;
+            --card-bg: #151921;
+            --accent: #58a6ff;
+            --text: #adbac7;
+            --white: #ffffff;
+        }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        header { text-align: center; padding: 40px 0; }
+        h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 10px; }
+        .description { color: var(--accent); font-style: italic; margin-bottom: 30px; }
+        
+        .category { background: var(--card-bg); border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        h2 { color: var(--white); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-top: 0; }
+        
+        .command { margin: 15px 0; padding-left: 10px; border-left: 3px solid #444; }
+        code { background: #22272e; color: #ffa657; padding: 4px 8px; border-radius: 6px; font-size: 0.95rem; font-weight: bold; }
+        .cmd-desc { display: block; margin-top: 5px; font-size: 0.9rem; color: #768390; }
+
+        footer { text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid #30363d; font-size: 0.85rem; }
+        .credit { color: var(--accent); font-weight: bold; text-decoration: none; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>❄️ Snow-BOT Commands</h1>
-        <div class="command-list">
-            <p><code>!play [song]</code> - Plays music from YouTube</p>
-            <p><code>!help</code> - Shows the bot menu</p>
-            <p><code>!clear [num]</code> - Deletes messages (Staff)</p>
-            <p><code>!poll "quest"</code> - Creates a vote</p>
+
+<div class="container">
+    <header>
+        <h1>❄️ Snow Bot</h1>
+        <p class="description">A high-quality Discord bot for music, moderation, and activities.</p>
+    </header>
+
+    <div class="category">
+        <h2>🎶 Music Commands</h2>
+        <div class="command">
+            <code>!play [song name/link]</code>
+            <span class="cmd-desc">Joins your voice channel and plays high-quality audio from YouTube.</span>
+        </div>
+        <div class="command">
+            <code>!pause</code> / <code>!resume</code>
+            <span class="cmd-desc">Pauses the current track or keeps the party going.</span>
+        </div>
+        <div class="command">
+            <code>!skip</code>
+            <span class="cmd-desc">Votes to skip the current song to the next one in queue.</span>
+        </div>
+        <div class="command">
+            <code>!np</code>
+            <span class="cmd-desc">Shows an embed of the song currently playing.</span>
+        </div>
+        <div class="command">
+            <code>!stop</code>
+            <span class="cmd-desc">Clears the queue and makes the bot leave the voice channel.</span>
         </div>
     </div>
+
+    <div class="category">
+        <h2>🛡️ Moderation (Staff Only)</h2>
+        <div class="command">
+            <code>!kick @user [reason]</code>
+            <span class="cmd-desc">Kicks a member from the server. Requires Kick permissions.</span>
+        </div>
+        <div class="command">
+            <code>!ban @user [reason]</code>
+            <span class="cmd-desc">Permanently bans a member. Requires Ban permissions.</span>
+        </div>
+        <div class="command">
+            <code>!clear [amount]</code>
+            <span class="cmd-desc">Deletes a specific number of messages (Max 100).</span>
+        </div>
+        <div class="command">
+            <code>!timeout @user [minutes]</code>
+            <span class="cmd-desc">Prevents a user from typing or joining VC for a set time.</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>📊 Activity & Utility</h2>
+        <div class="command">
+            <code>!help</code>
+            <span class="cmd-desc">Displays the interactive help menu in Discord.</span>
+        </div>
+        <div class="command">
+            <code>!poll "Question" opt1 opt2</code>
+            <span class="cmd-desc">Creates a reaction-based poll for your community.</span>
+        </div>
+        <div class="command">
+            <code>!quiz "Question" answer opt1 opt2</code>
+            <span class="cmd-desc">Starts a mini-game quiz in the channel.</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>Snow Bot &copy; 2026</p>
+        <p>Created with 💙 by <a href="https://github.com/SdwNitrix-DEV" class="credit">SdwNitrix-DEV</a></p>
+        <p>Hosted on <span style="color:white">HeavenCloud</span></p>
+    </footer>
+</div>
+
 </body>
 </html>
