@@ -3,46 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snow Bot | Official Commands</title>
+    <title>Snow Bot | Command Documentation</title>
     <style>
-         .invite-btn {
-            display: inline-block;
-            background-color: #5865F2; /* Discord Blue */
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-top: 20px;
-            transition: background 0.3s, transform 0.2s;
-        }
-        .invite-btn:hover {
-            background-color: #4752c4;
-            transform: scale(1.05);
-        }
         :root {
             --bg: #0b0e14;
             --card-bg: #151921;
             --accent: #58a6ff;
             --text: #adbac7;
             --white: #ffffff;
+            --discord: #5865F2;
         }
         body { background-color: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
         .container { max-width: 800px; margin: 0 auto; }
         header { text-align: center; padding: 40px 0; }
-        h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 10px; }
-        .description { color: var(--accent); font-style: italic; margin-bottom: 30px; }
+        h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 5px; }
+        .invite-btn { display: inline-block; background-color: var(--discord); color: white !important; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 20px 0; transition: 0.3s; }
+        .invite-btn:hover { background-color: #4752c4; transform: scale(1.05); }
         
-        .category { background: var(--card-bg); border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .category { background: var(--card-bg); border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 25px; }
         h2 { color: var(--white); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-top: 0; }
         
         .command { margin: 15px 0; padding-left: 10px; border-left: 3px solid #444; }
         code { background: #22272e; color: #ffa657; padding: 4px 8px; border-radius: 6px; font-size: 0.95rem; font-weight: bold; }
         .cmd-desc { display: block; margin-top: 5px; font-size: 0.9rem; color: #768390; }
-
         footer { text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid #30363d; font-size: 0.85rem; }
-        .credit { color: var(--accent); font-weight: bold; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -51,73 +35,64 @@
     <header>
         <h1>❄️ Snow Bot</h1>
         <a href="https://discord.com/oauth2/authorize?client_id=1067505203596775424" class="invite-btn">➕ Invite Snow to Your Server</a>
-        <p class="description">A new discord bot for moderation, small activities and music commands, made by a small developing team.</p>
+        <p>Official command documentation and guide.</p>
     </header>
 
     <div class="category">
-        <h2>🎶 Music Commands</h2>
+        <h2>⚙️ Utility</h2>
         <div class="command">
-            <code>-play [song name/link]</code>
-            <span class="cmd-desc">Joins your voice channel and plays high-quality audio from YouTube.</span>
-        </div>
-        <div class="command">
-            <code>-pause</code> / <code>-resume</code>
-            <span class="cmd-desc">Pauses the current track or keeps the party going.</span>
-        </div>
-        <div class="command">
-            <code>-skip</code>
-            <span class="cmd-desc">Votes to skip the current song to the next one in queue.</span>
-        </div>
-        <div class="command">
-            <code>-np</code>
-            <span class="cmd-desc">Shows an embed of the song currently playing.</span>
-        </div>
-        <div class="command">
-            <code>-stop</code>
-            <span class="cmd-desc">Clears the queue and makes the bot leave the voice channel.</span>
+            <code>-help</code> / <code>-h</code>
+            <span class="cmd-desc">Shows the general command list. Use <code>-help [command]</code> for deep details.</span>
         </div>
     </div>
 
     <div class="category">
-        <h2>🛡️ Moderation (Staff Only)</h2>
-        <div class="command">
-            <code>-kick @user [reason]</code>
-            <span class="cmd-desc">Kicks a member from the server. Requires Kick permissions.</span>
-        </div>
-        <div class="command">
-            <code>-ban @user [reason]</code>
-            <span class="cmd-desc">Permanently bans a member. Requires Ban permissions.</span>
-        </div>
+        <h2>🛡️ Moderation</h2>
         <div class="command">
             <code>-clear [amount]</code>
-            <span class="cmd-desc">Deletes a specific number of messages (Max 100).</span>
-        </div>
-        <div class="command">
-            <code>-timeout @user [minutes]</code>
-            <span class="cmd-desc">Prevents a user from typing or joining VC for a set time.</span>
+            <span class="cmd-desc">Deletes a specific number of messages. (Staff Only)</span>
         </div>
     </div>
 
     <div class="category">
-        <h2>📊 Activity & Utility</h2>
+        <h2>🎮 Activity</h2>
         <div class="command">
-            <code>-help</code>
-            <span class="cmd-desc">Displays the interactive help menu in Discord.</span>
+            <code>-poll "Question" "Opt1" "Opt2" ...</code>
+            <span class="cmd-desc">Starts a 2-minute vote. Max 6 options. (5m Cooldown)</span>
         </div>
         <div class="command">
-            <code>-poll "Question" opt1 opt2</code>
-            <span class="cmd-desc">Creates a reaction-based poll for your community.</span>
+            <code>-quiz "Question" "Answer" "Opt1" ...</code>
+            <span class="cmd-desc">Starts a 60-second trivia game. (10m Cooldown)</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>🎶 Music</h2>
+        <div class="command">
+            <code>-play [song/link]</code>
+            <span class="cmd-desc">Plays music from YouTube or adds it to the queue.</span>
         </div>
         <div class="command">
-            <code>-quiz "Question" answer opt1 opt2</code>
-            <span class="cmd-desc">Starts a mini-game quiz in the channel.</span>
+            <code>-search [query]</code>
+            <span class="cmd-desc">Finds 5 YouTube results. Type 1-5 to choose.</span>
+        </div>
+        <div class="command">
+            <code>-queue</code> / <code>-q</code>
+            <span class="cmd-desc">Shows the next 10 songs waiting to be played.</span>
+        </div>
+        <div class="command">
+            <code>-loop</code>
+            <span class="cmd-desc">Toggles repeat mode. Keeps the current list recycling.</span>
+        </div>
+        <div class="command">
+            <code>-skip</code> / <code>-stop</code>
+            <span class="cmd-desc">Vote to skip the current track or stop the bot entirely.</span>
         </div>
     </div>
 
     <footer>
-        <p>Snow Bot &copy; 2026</p>
-        <p>Created with 💙 by <a href="https://github.com/SdwNitrix-DEV" class="credit">SdwNitrix-DEV</a></p>
-        <p>Hosted on <span style="color:white">HeavenCloud</span></p>
+        <p>Snow Bot &copy; 2026 | Created by <b>SdwNitrix-DEV</b></p>
+        <p>Auto-leaves empty Voice Channels after 10 minutes to save resources.</p>
     </footer>
 </div>
 
