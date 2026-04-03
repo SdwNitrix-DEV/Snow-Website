@@ -27,6 +27,11 @@
         code { background: #22272e; color: #ffa657; padding: 4px 8px; border-radius: 6px; font-size: 0.95rem; font-weight: bold; }
         .cmd-desc { display: block; margin-top: 5px; font-size: 0.9rem; color: #768390; }
         footer { text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid #30363d; font-size: 0.85rem; }
+
+        .badge { font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-left: 10px; }
+        .badge.user { background: #43b581; color: white; }
+        .badge.cooldown { background: #f1c40f; color: black; }
+        .command-details { font-size: 0.85rem; color: #768390; margin-top: 5px; }
     </style>
 </head>
 <body>
@@ -91,6 +96,31 @@
         </div>
     </div>
 
+    <div class="category">
+        <h2>👾 Webhook & Characters</h2>
+        <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
+            Create permanent character personas and speak as them in chat.
+        </p>
+
+        <div class="command">
+            <code>/char_register [name] [file]</code>
+            <span class="badge user">User</span>
+            <span class="cmd-desc">Upload an image from your gallery to save a character to your library.</span>
+            <ul class="command-details">
+                <li>Saved permanently to your account.</li>
+            </ul>
+        </div>
+
+        <div class="command">
+            <code>/cshout [name] [message]</code>
+            <span class="badge cooldown">5m CD</span>
+            <span class="cmd-desc">Speak as your saved character using a temporary webhook.</span>
+            <ul class="command-details">
+                <li>Messages are logged for server safety.</li>
+            </ul>
+        </div>
+    </div>
+    
 <div class="category">
         <h2>🎶 Music</h2>
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
