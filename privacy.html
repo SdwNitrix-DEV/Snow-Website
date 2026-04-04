@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Snow Bot</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #5865F2; /* Discord Blurple */
+            --bg-color: #f4f7f9;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+
+        .last-updated {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        p, li {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    
+    <div class="policy-card">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: [04/04/2026]</p>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy applies to the Discord bot "Snow" (hereinafter referred to as "the Bot") and its related services. By adding the Bot to your server or interacting with it, you consent to the data collection and usage practices described in this policy.</p>
+
+        <h2>2. Data We Collect</h2>
+        <p>To provide its core functionalities, the Bot collects and stores the following specific data points:</p>
+        <ul>
+            <li><strong>Discord User IDs:</strong> Used to link saved characters to specific users and to log moderation actions (e.g., timeouts, kicks, bans).</li>
+            <li><strong>Discord Server (Guild) IDs and Channel IDs:</strong> Used to configure server-specific settings, such as moderation log channels and music queues.</li>
+            <li><strong>Image URLs:</strong> When a user uploads an image for a custom character avatar, the Discord attachment URL is stored.</li>
+            <li><strong>Transient Message Data:</strong> The Bot requires the "Message Content Intent" to read and execute text commands. Message content is processed temporarily in memory to execute commands and is not persistently stored, except when explicitly saved as a custom character name or recorded in a server's configured moderation log.</li>
+        </ul>
+
+        <h2>3. How We Use Your Data</h2>
+        <p>The collected data is used exclusively for the operational functionality of the Bot. This includes:</p>
+        <ul>
+            <li>Storing and retrieving user-created characters via the character vault.</li>
+            <li>Enforcing server moderation rules and logging moderator actions.</li>
+            <li>Managing active music queues for specific servers.</li>
+            <li>Providing expected command responses.</li>
+        </ul>
+
+        <h2>4. Data Storage and Security</h2>
+        <p>Data is stored securely in an internal SQLite database hosted on our secure servers. We implement standard security measures to protect against unauthorized access, alteration, or destruction of this data.</p>
+
+        <h2>5. Data Sharing and Disclosure</h2>
+        <p>We do not sell, rent, or trade your data to any third parties. Data is only accessible to the Bot's developer and is only disclosed if required by law or to comply with Discord's Developer Terms of Service.</p>
+
+        <h2>6. Data Retention and Deletion</h2>
+        <ul>
+            <li><strong>User Control:</strong> Users can delete their stored character data at any time using the <code>/char_delete</code> command.</li>
+            <li><strong>Server Control:</strong> Server administrators can clear server-specific settings (like mod-logs) by disabling the feature via commands.</li>
+            <li><strong>Right to Erasure:</strong> If you wish to have all your data manually removed from the database, you may contact the developer directly.</li>
+        </ul>
+
+        <h2>7. Contact Information</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy or your data, please contact the developer via Discord at: <strong>[@sdw_nitrix]</strong>.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Snow Bot Development. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
