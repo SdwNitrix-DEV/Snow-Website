@@ -236,9 +236,79 @@
 </div>
 
     <footer>
-         <a href="https://discord.gg/jfsQUDB" class="invite-btn">Join our server now!</a>
+        <a href="https://discord.gg/jfsQUDB" class="invite-btn">Join our server now!</a>
         <p>Snow Bot &copy; 2026</p>
         <p>Created with 💙 by <a href="https://github.com/SdwNitrix-DEV" style="color: var(--accent); text-decoration: none; font-weight: bold;">SdwNitrix-DEV</a></p>
         <p>Hosted on <span style="color:white">HeavenCloud</span></p>
     </footer>
 </div>
+
+<div id="legalModal" class="modal-overlay">
+    <div class="modal-content">
+        <h2>Welcome to the Blizzard</h2>
+        <p>Before exploring the Winter Manual, please acknowledge that you agree to our <a href="tos.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.</p>
+        <button id="acceptBtn" class="accept-button">I Understand & Accept</button>
+    </div>
+</div>
+
+<style>
+    /* Styling for the Legal Popup */
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(8px);
+        z-index: 10000;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        background-color: #151921;
+        border: 1px solid #30363d;
+        color: #ffffff;
+        padding: 35px;
+        border-radius: 16px;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+    .modal-content h2 { margin-top: 0; color: var(--white); }
+    .modal-content p { color: #adbac7; font-size: 0.95rem; line-height: 1.5; margin-bottom: 25px; }
+    .modal-content a { color: var(--accent); text-decoration: none; font-weight: bold; }
+    .modal-content a:hover { text-decoration: underline; }
+    .accept-button {
+        background-color: #238636;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.2s;
+    }
+    .accept-button:hover { background-color: #2ea043; transform: translateY(-2px); }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const modal = document.getElementById("legalModal");
+        const acceptBtn = document.getElementById("acceptBtn");
+
+        if (!localStorage.getItem("snowLegalAccepted")) {
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden"; 
+        }
+
+        acceptBtn.addEventListener("click", function() {
+            localStorage.setItem("snowLegalAccepted", "true");
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        });
+    });
+</script>
+</body>
+</html>
