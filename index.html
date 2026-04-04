@@ -248,15 +248,26 @@
 </div>
 
 <div id="legalModal" class="modal-overlay">
-    <div class="modal-content">
-        <h2>Welcome to the Blizzard</h2>
-        <p>Before exploring the Winter Manual, please acknowledge that you agree to our <a href="tos.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.</p>
-        <button id="acceptBtn" class="accept-button">I Understand & Accept</button>
+    <div class="modal-content" id="modalBox">
+        
+        <div id="modalInitialView">
+            <h2>Welcome to the Blizzard</h2>
+            <p>Before exploring the Winter Manual, please acknowledge our 
+                <a href="javascript:void(0)" onclick="openLegal('tos.html')">Terms of Service</a> and 
+                <a href="javascript:void(0)" onclick="openLegal('privacy.html')">Privacy Policy</a>.
+            </p>
+            <button id="acceptBtn" class="accept-button">I Understand & Accept</button>
+        </div>
+        
+        <div id="legalReaderView" style="display:none; text-align: left;">
+            <a href="javascript:void(0)" onclick="closeLegal()" style="color: var(--accent); text-decoration: none; font-weight: bold; display: block; margin-bottom: 10px;">← Back to Accept</a>
+            <iframe id="legalFrame" src="" style="width:100%; height:350px; border: 1px solid #30363d; border-radius: 8px; background: white;"></iframe>
+        </div>
+
     </div>
 </div>
 
 <style>
-    /* Styling for the Legal Popup */
     .modal-overlay {
         display: none;
         position: fixed;
@@ -274,14 +285,15 @@
         color: #ffffff;
         padding: 35px;
         border-radius: 16px;
-        max-width: 400px;
+        max-width: 400px; /* Starts small */
+        width: 90%;
         text-align: center;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        transition: max-width 0.3s ease; /* Smooth widening */
     }
     .modal-content h2 { margin-top: 0; color: var(--white); }
     .modal-content p { color: #adbac7; font-size: 0.95rem; line-height: 1.5; margin-bottom: 25px; }
     .modal-content a { color: var(--accent); text-decoration: none; font-weight: bold; }
-    .modal-content a:hover { text-decoration: underline; }
     .accept-button {
         background-color: #238636;
         color: white;
@@ -298,16 +310,35 @@
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const modal = document.getElementById("legalModal");
-        const acceptBtn = document.getElementById("acceptBtn");
+    const modal = document.getElementById("legalModal");
+    const modalBox = document.getElementById("modalBox");
+    const initialView = document.getElementById("modalInitialView");
+    const readerView = document.getElementById("legalReaderView");
+    const legalFrame = document.getElementById("legalFrame");
 
+    // --- 1. THE IFRAME LOGIC ---
+    function openLegal(url) {
+        initialView.style.display = "none";
+        readerView.style.display = "block";
+        modalBox.style.maxWidth = "700px"; // Widen the box to read easily
+        legalFrame.src = url;
+    }
+
+    function closeLegal() {
+        readerView.style.display = "none";
+        initialView.style.display = "block";
+        modalBox.style.maxWidth = "400px"; // Shrink back
+        legalFrame.src = "";
+    }
+
+    // --- 2. THE LOCALSTORAGE LOGIC ---
+    document.addEventListener("DOMContentLoaded", function() {
         if (!localStorage.getItem("snowLegalAccepted")) {
             modal.style.display = "flex";
             document.body.style.overflow = "hidden"; 
         }
 
-        acceptBtn.addEventListener("click", function() {
+        document.getElementById("acceptBtn").addEventListener("click", function() {
             localStorage.setItem("snowLegalAccepted", "true");
             modal.style.display = "none";
             document.body.style.overflow = "auto";
