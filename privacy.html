@@ -105,7 +105,7 @@
         <h1>Privacy Policy</h1>
 <div class="policy-meta">
     <p class="meta-item"><strong>Effective Date:</strong> 04 April 2026</p>
-    <p class="meta-item"><strong>Last Updated:</strong> 19 April 2026</p>
+    <p class="meta-item"><strong>Last Updated:</strong> 29 April 2026</p>
 </div>
 
         <h2>1. Introduction</h2>
@@ -114,9 +114,11 @@
         <h2>2. Data We Collect</h2>
         <p>To provide its core functionalities, the Bot collects and stores the following specific data points:</p>
         <ul>
-            <li><strong>Discord User IDs:</strong> Used to link saved characters to specific users and to log moderation actions (e.g., timeouts, kicks, bans).</li>
-            <li><strong>Discord Server (Guild) IDs and Channel IDs:</strong> Used to configure server-specific settings, such as moderation log channels and music queues.</li>
+            <li><strong>Discord User IDs:</strong> Used to link saved characters to specific users, track economy balances, save RPG game progression, and log moderation actions.</li>
+            <li><strong>Discord Server (Guild) IDs and Channel IDs:</strong> Used to configure server-specific settings, such as moderation log channels and custom command prefixes.</li>
             <li><strong>Image URLs:</strong> When a user uploads an image for a custom character avatar, the Discord attachment URL is stored.</li>
+            <li><strong>Virtual Economy & RPG Data:</strong> We store virtual currency balances (Snowcoins), inventory items, game statistics, badge progression, and virtual pet data linked to your User ID.</li>
+            <li><strong>Interaction Timestamps:</strong> We record the time of specific user interactions (e.g., claiming daily rewards, interacting with virtual pets) to enforce fair-use cooldowns.</li>
             <li><strong>Transient Message Data:</strong> The Bot requires the "Message Content Intent" to read and execute text commands. Message content is processed temporarily in memory to execute commands and is not persistently stored, except when explicitly saved as a custom character name or recorded in a server's configured moderation log.</li>
             <li><strong>Support Ticket Transcripts (Support Lodge Only):</strong> When a user opens a support ticket in our official server, a full HTML transcript of the conversation is generated and archived for staff review.</li>
             <li><strong>Premium Status Data:</strong> If you acquire premium features, we store your Discord User ID and the expiration date of your premium status in our database to ensure continuous access to your perks.</li>
@@ -126,11 +128,12 @@
         <p>The collected data is used exclusively for the operational functionality of the Bot. This includes:</p>
         <ul>
             <li>Storing and retrieving user-created characters via the character vault.</li>
+            <li>Managing the virtual economy systems, global leaderboards, and RPG progression features (The Lodge).</li>
             <li>Enforcing server moderation rules and logging moderator actions.</li>
-            <li>Managing active music queues for specific servers.</li>
+            <li>Enforcing necessary rate limits and cooldowns on commands to ensure bot stability.</li>
             <li>Providing expected command responses.</li>
             <li>Providing dedicated user support and archiving ticket transcripts to resolve disputes and track bug reports.</li>
-            <li>Actively deleting user command triggers (such as the <code>-say</code> prefix command) to keep chat channels clean, if granted the "Manage Messages" permission by a server administrator.</li>
+            <li>Actively deleting user command triggers (such as the <code>-say</code> or <code>-cshout</code> commands) to keep chat channels clean, if granted the "Manage Messages" permission by a server administrator.</li>
         </ul>
 
         <h2>4. Data Storage and Security</h2>
