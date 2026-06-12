@@ -88,20 +88,20 @@
         </p>
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;"><span style="color: var(--accent); font-weight: bold;">❄️ Notice:</span> Keep Snow's role <strong>above</strong> other members in your Role List!</p>
 
-        <div class="command"><code>-setlogs [#channel]</code><span class="cmd-desc">Sets the destination for Snow's 'Audit Blizzard' logging engine.</span></div>
-        <div class="command"><code>-say [message]</code><span class="cmd-desc">Let Snow be your voice! Makes the bot repeat your message and hides your trigger.</span></div>
-        <div class="command"><code>-clear [amount]</code><span class="cmd-desc">Sweeps away up to 100 messy messages like a fresh snowstorm.</span></div>
-        <div class="command"><code>-kick @user [reason]</code><span class="cmd-desc">Escorts a rule-breaking member out of the lodge and back into the cold.</span></div>
-        <div class="command"><code>-ban @user [reason]</code><span class="cmd-desc">Puts a member on 'Permanent Ice'. Freezes them completely out of the server.</span></div>
-        <div class="command"><code>-timeout @user [mins] [reason]</code><span class="cmd-desc">Flash-freezes a user's ability to chat or react for a set amount of time.</span></div>
-        <div class="command"><code>-untimeout @user</code><span class="cmd-desc">Thaw out a flash-frozen user early. Rules dictate only the original moderator can thaw them!</span></div>
-        <div class="command"><code>-warn [@user] [reason]</code><span class="cmd-desc">Issue a formal frostbite warning to a disruptive traveler, saved forever in the database.</span></div>
-        <div class="command"><code>-warnings [@user]</code><span class="cmd-desc">Open the ledger to view all past logs, dates, and moderator reasons for a specific user.</span></div>
-        <div class="command"><code>-clear_warnings [@user]</code><span class="cmd-desc">Melt away all warnings for a user, giving them a completely clean slate.</span></div>
-        <div class="command"><code>-vcmute @user</code><span class="cmd-desc">'Flash-freeze' a user's microphone so they cannot speak in voice channels.</span></div>
-        <div class="command"><code>-vcunmute @user</code><span class="cmd-desc">Melt the ice from a user's microphone to let their voice carry again.</span></div>
-        <div class="command"><code>-vcdeafen @user</code><span class="cmd-desc">Encase a user's headset in solid ice so they cannot hear any chatter in the channel.</span></div>
-        <div class="command"><code>-vcundeafen @user</code><span class="cmd-desc">Shatter the ice around a user's headset to bring them back to the conversation.</span></div>
+        <div class="command"><code>-mod logs [#channel]</code><span class="cmd-desc">Sets the destination for Snow's 'Audit Blizzard' logging engine.</span></div>
+        <div class="command"><code>-mod say [message]</code><span class="cmd-desc">Let Snow be your voice! Makes the bot repeat your message and hides your trigger.</span></div>
+        <div class="command"><code>-mod clear [amount]</code><span class="cmd-desc">Sweeps away up to 100 messy messages like a fresh snowstorm.</span></div>
+        <div class="command"><code>-mod kick @user [reason]</code><span class="cmd-desc">Escorts a rule-breaking member out of the lodge and back into the cold.</span></div>
+        <div class="command"><code>-mod ban @user [reason]</code><span class="cmd-desc">Puts a member on 'Permanent Ice'. Freezes them completely out of the server.</span></div>
+        <div class="command"><code>-mod timeout @user [mins] [reason]</code><span class="cmd-desc">Flash-freezes a user's ability to chat or react for a set amount of time.</span></div>
+        <div class="command"><code>-mod untimeout @user</code><span class="cmd-desc">Thaw out a flash-frozen user early. Rules dictate only the original moderator or an admin can thaw them!</span></div>
+        <div class="command"><code>-vc mute @user</code><span class="cmd-desc">'Flash-freeze' a user's microphone so they cannot speak in voice channels.</span></div>
+        <div class="command"><code>-vc unmute @user</code><span class="cmd-desc">Melt the ice from a user's microphone to let their voice carry again.</span></div>
+        <div class="command"><code>-vc deafen @user</code><span class="cmd-desc">Encase a user's headset in solid ice so they cannot hear any chatter in the channel.</span></div>
+        <div class="command"><code>-vc undeafen @user</code><span class="cmd-desc">Shatter the ice around a user's headset to bring them back to the conversation.</span></div>
+        <div class="command"><code>-warn add [@user] [reason]</code><span class="cmd-desc">Issue a formal frostbite warning to a disruptive traveler, saved forever in the database ledger.</span></div>
+        <div class="command"><code>-warn list [@user]</code><span class="cmd-desc">Open the ledger to view all past logs, dates, and moderator reasons for a specific user.</span></div>
+        <div class="command"><code>-warn clear [@user]</code><span class="cmd-desc">Melt away all warnings for a user, giving them a completely clean slate.</span></div>
     </div>
 
     <div class="category">
@@ -109,11 +109,11 @@
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
             Freeze your favorite characters into Snow's memory and let them speak through the blizzard!
         </p>
-        <div class="command"><code>-char_register [name] [file]</code><span class="cmd-desc">Invite a new friend into my gallery! Your frosty vault can hold a maximum of 4 characters.</span></div>
-        <div class="command"><code>-char_delete [name]</code><span class="cmd-desc">Shatter a character's frozen memory. Includes a 45-second safety loop to prevent accidental slips.</span></div>
-        <div class="command"><code>-force_delete_char [@user] [name]</code><span class="cmd-desc"><strong>Admin Only:</strong> Bypass a user's frozen vault and instantly shatter an inappropriate roleplay character.</span></div>
-        <div class="command"><code>-char_list</code><span class="cmd-desc">Privately peek into your vault to see a list of all your currently saved personas.</span></div>
-        <div class="command"><code>-cshout [name] [message]</code><span class="cmd-desc">Cast a Voice Swap spell! Speak as your saved character using webhooks (5-minute cooldown).</span></div>
+        <div class="command"><code>-char register [name] [file]</code><span class="cmd-desc">Invite a new friend into my gallery! Your frosty vault can hold a maximum of 4 characters (10 for Premium).</span></div>
+        <div class="command"><code>-char delete [name]</code><span class="cmd-desc">Shatter a character's frozen memory. Includes a 45-second safety loop to prevent accidental slips.</span></div>
+        <div class="command"><code>-char force_delete [@user] [name]</code><span class="cmd-desc"><strong>Admin Only:</strong> Bypass a user's frozen vault and instantly shatter an inappropriate roleplay character.</span></div>
+        <div class="command"><code>-char list</code><span class="cmd-desc">Privately peek into your vault to see a list of all your currently saved personas and vault capacity.</span></div>
+        <div class="command"><code>-char shout [name] [message]</code><span class="cmd-desc">Cast a Voice Swap spell! Speak as your saved character using webhooks (90-second rest cooldown).</span></div>
     </div>
         
     <div class="category">
@@ -239,11 +239,11 @@
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
             Unlock exclusive features and customize your blizzard with these powerful VIP commands!
         </p>
-        <div class="command"><code>-premium_status</code><span class="cmd-desc">Check your current VIP membership status! I'll consult the frozen archives and let you know which tier you hold and when it expires.</span></div>
-        <div class="command"><code>-prefix [new_prefix]</code><span class="cmd-desc"><strong>Admin Only:</strong> Change the blizzard's signature command! Set a custom command prefix (like !, ?, or snow) for your server. (Max 5 characters).</span></div>
-        <div class="command"><code>-reset_prefix</code><span class="cmd-desc"><strong>Admin Only:</strong> Reset your server's custom prefix safely back to the default.</span></div>
-        <div class="command"><code>-color [hex_code]</code><span class="cmd-desc">Alter profile card embed bars using targeted hex codes.</span></div>
-        <div class="command"><code>-weekly / -yearly</code><span class="cmd-desc"><strong>Updated Location:</strong> Claim your periodic Premium-only Lodge reserve stipends safely.</span></div>
+        <div class="command"><code>-premium status</code><span class="cmd-desc">Check your current VIP membership status! I'll consult the frozen archives and let you know which tier you hold and when it expires.</span></div>
+        <div class="command"><code>-premium prefix [new_prefix]</code><span class="cmd-desc"><strong>Admin Only:</strong> Change the blizzard's signature command trigger (like !, ?, or snow) for your server (Max 5 characters).</span></div>
+        <div class="command"><code>-premium reset_prefix</code><span class="cmd-desc"><strong>Admin Only:</strong> Reset your server's custom prefix safely back to the default default command trigger.</span></div>
+        <div class="command"><code>-premium color [hex_code]</code><span class="cmd-desc">Alter your Tundra ID profile and character vault embed accent bars using targeted hex codes.</span></div>
+        <div class="command"><code>-weekly / -yearly</code><span class="cmd-desc">Claim your periodic Premium-only Lodge reserve stipends safely.</span></div>
     </div>
 </div>
 
