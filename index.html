@@ -45,15 +45,17 @@
         <h1>❄️ Snow Bot Official ❄️</h1>
         <a href="https://discord.com/oauth2/authorize?client_id=1067505203596775424&permissions=1374942260294&integration_type=0&scope=bot+applications.commands" class="invite-btn">➕ Invite Snow to Your Server</a>
         <p>
-        Welcome to the Blizzard! Snow ❄️ is your <strong>completely free</strong> companion for keeping your server safe, braving the frozen dungeons, and building your own tundra legacy. Whether you prefer custom prefixes or modern <code>/</code> slash commands, 
-        Snow is ready to help!
-    </p>
-    
-    <p>
-        Explore the <strong>Winter Manual</strong> below to see her full range of powers or click the button above to invite her to your community today! 🍬✨
-    </p>
+            Welcome to the Lodge! Snow ❄️ is your <strong>completely free</strong> companion designed to keep your server safe while offering an incredibly deep, immersive RPG experience. Whether you prefer custom prefixes or modern <code>/</code> slash commands, Snow is ready to bring the magic of the tundra to your community!
+        </p>
+        <p>
+            <strong>What's waiting in the frost?</strong> Dive into our massive world featuring the <em>Legends of the Tundra TCG</em>, high-stakes Abyssal survival games, interactive Tavern & Kitchen shifts, and a deep companion fusion system. Track wild beasts, cultivate your Greenhouse, and collect over 120 unique badges to cement your legacy in the Hall of Honors.
+        </p>
+        <p>
+            Explore the <strong>Winter Manual</strong> below to see her full range of powers, or click the button above to invite her to your community today! 🍬✨
+        </p>
     </header>
 
+    <div class="category-container">
     <div class="category">
         <h2>⚙️ Utility</h2>
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
@@ -70,8 +72,8 @@
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
         Discover the pathways through the blizzard to my official web cabin, polls, and general knowledge.
         </p>
-        <div class="command"><code>-poll "Question" "Opt1" "Opt2"</code><span class="cmd-desc">Start a 2-minute 'Snowy Showdown' reaction poll!</span></div>
-        <div class="command"><code>-quiz [question] [answer]</code><span class="cmd-desc">A 60-second 'Blizzard Brain' trivia race to challenge your server.</span></div>
+        <div class="command"><code>-poll "Question" "Opt1" "Opt2"</code><span class="cmd-desc">Start a 2-minute 'Snowy Showdown' reaction poll! Supports up to 6 unique options.</span></div>
+        <div class="command"><code>-quiz [question] [answer]</code><span class="cmd-desc">A 60-second 'Blizzard Brain' trivia race to challenge your server. Crowns the first to guess right.</span></div>
         <div class="command"><code>-ping</code><span class="cmd-desc">Check how fast the blizzard winds are blowing (Bot Latency).</span></div>
         <div class="command"><code>-premium</code><span class="cmd-desc">View the icy perks of our VIP tiers and support the Lodge's development!</span></div>
         <div class="command"><code>-website</code><span class="cmd-desc">Receive a map through the storm straight to this official website!</span></div>
@@ -86,20 +88,20 @@
         </p>
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;"><span style="color: var(--accent); font-weight: bold;">❄️ Notice:</span> Keep Snow's role <strong>above</strong> other members in your Role List!</p>
 
-        <div class="command"><code>-setlogs [#channel]</code><span class="cmd-desc">Sets the destination for Snow's 'Audit Blizzard'.</span></div>
-        <div class="command"><code>-say [message]</code><span class="cmd-desc">Let Snow be your voice! Makes the bot repeat your message.</span></div>
+        <div class="command"><code>-setlogs [#channel]</code><span class="cmd-desc">Sets the destination for Snow's 'Audit Blizzard' logging engine.</span></div>
+        <div class="command"><code>-say [message]</code><span class="cmd-desc">Let Snow be your voice! Makes the bot repeat your message and hides your trigger.</span></div>
         <div class="command"><code>-clear [amount]</code><span class="cmd-desc">Sweeps away up to 100 messy messages like a fresh snowstorm.</span></div>
-        <div class="command"><code>-kick @user [reason]</code><span class="cmd-desc">Escorts a member out into the snow.</span></div>
-        <div class="command"><code>-ban @user [reason]</code><span class="cmd-desc">Puts a member on 'Permanent Ice'. Bans them forever.</span></div>
-        <div class="command"><code>-timeout @user [mins]</code><span class="cmd-desc">Flash-freezes a user's ability to chat for a set amount of time.</span></div>
-        <div class="command"><code>-untimeout @user</code><span class="cmd-desc">Thaw out a flash-frozen user early.</span></div>
-        <div class="command"><code>-warn [@user] [reason]</code><span class="cmd-desc">Issue a formal frostbite warning to a disruptive traveler.</span></div>
-        <div class="command"><code>-warnings [@user]</code><span class="cmd-desc">Open the ledger to view all past warnings for a specific user.</span></div>
-        <div class="command"><code>-clear_warnings [@user]</code><span class="cmd-desc">Melt away all warnings for a user, giving them a clean slate.</span></div>
-        <div class="command"><code>-vcmute @user</code><span class="cmd-desc">'Flash-freeze' a user's microphone so they cannot speak.</span></div>
-        <div class="command"><code>-vcunmute @user</code><span class="cmd-desc">Melt the ice from a user's microphone.</span></div>
-        <div class="command"><code>-vcdeafen @user</code><span class="cmd-desc">Encase a user's headset in solid ice so they cannot hear the channel.</span></div>
-        <div class="command"><code>-vcundeafen @user</code><span class="cmd-desc">Shatter the ice around a user's headset.</span></div>
+        <div class="command"><code>-kick @user [reason]</code><span class="cmd-desc">Escorts a rule-breaking member out of the lodge and back into the cold.</span></div>
+        <div class="command"><code>-ban @user [reason]</code><span class="cmd-desc">Puts a member on 'Permanent Ice'. Freezes them completely out of the server.</span></div>
+        <div class="command"><code>-timeout @user [mins] [reason]</code><span class="cmd-desc">Flash-freezes a user's ability to chat or react for a set amount of time.</span></div>
+        <div class="command"><code>-untimeout @user</code><span class="cmd-desc">Thaw out a flash-frozen user early. Rules dictate only the original moderator can thaw them!</span></div>
+        <div class="command"><code>-warn [@user] [reason]</code><span class="cmd-desc">Issue a formal frostbite warning to a disruptive traveler, saved forever in the database.</span></div>
+        <div class="command"><code>-warnings [@user]</code><span class="cmd-desc">Open the ledger to view all past logs, dates, and moderator reasons for a specific user.</span></div>
+        <div class="command"><code>-clear_warnings [@user]</code><span class="cmd-desc">Melt away all warnings for a user, giving them a completely clean slate.</span></div>
+        <div class="command"><code>-vcmute @user</code><span class="cmd-desc">'Flash-freeze' a user's microphone so they cannot speak in voice channels.</span></div>
+        <div class="command"><code>-vcunmute @user</code><span class="cmd-desc">Melt the ice from a user's microphone to let their voice carry again.</span></div>
+        <div class="command"><code>-vcdeafen @user</code><span class="cmd-desc">Encase a user's headset in solid ice so they cannot hear any chatter in the channel.</span></div>
+        <div class="command"><code>-vcundeafen @user</code><span class="cmd-desc">Shatter the ice around a user's headset to bring them back to the conversation.</span></div>
     </div>
 
     <div class="category">
@@ -108,10 +110,10 @@
             Freeze your favorite characters into Snow's memory and let them speak through the blizzard!
         </p>
         <div class="command"><code>-char_register [name] [file]</code><span class="cmd-desc">Invite a new friend into my gallery! Your frosty vault can hold a maximum of 4 characters.</span></div>
-        <div class="command"><code>-char_delete [name]</code><span class="cmd-desc">Shatter a character's frozen memory. Includes a 45-second 'Safety Thaw'.</span></div>
-        <div class="command"><code>-force_delete_char [@user] [name]</code><span class="cmd-desc"><strong>Admin Only:</strong> Bypass a user's frozen vault and instantly shatter an inappropriate character.</span></div>
+        <div class="command"><code>-char_delete [name]</code><span class="cmd-desc">Shatter a character's frozen memory. Includes a 45-second safety loop to prevent accidental slips.</span></div>
+        <div class="command"><code>-force_delete_char [@user] [name]</code><span class="cmd-desc"><strong>Admin Only:</strong> Bypass a user's frozen vault and instantly shatter an inappropriate roleplay character.</span></div>
         <div class="command"><code>-char_list</code><span class="cmd-desc">Privately peek into your vault to see a list of all your currently saved personas.</span></div>
-        <div class="command"><code>-cshout [name] [message]</code><span class="cmd-desc">Cast a 'Voice Swap' spell! Speak as your saved character using a temporary webhook.</span></div>
+        <div class="command"><code>-cshout [name] [message]</code><span class="cmd-desc">Cast a Voice Swap spell! Speak as your saved character using webhooks (5-minute cooldown).</span></div>
     </div>
         
     <div class="category">
@@ -119,15 +121,16 @@
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
             Manage your Snowcoins, appraise your artifacts, and trade with other travelers.
         </p>
-        <div class="command"><code>-profile [@user]</code><span class="cmd-desc">View your official Tundra ID card, showcasing your active pet, wealth, and badges.</span></div>
+        <div class="command"><code>-profile [@user]</code><span class="cmd-desc">View your universal Tundra ID card, showcasing active companions, wealth, and honors.</span></div>
         <div class="command"><code>-balance</code><span class="cmd-desc">Check your exact Snowcoin balance. Vault max capacity: 5,000,000.</span></div>
-        <div class="command"><code>-bag</code><span class="cmd-desc">Inspect the artifacts and relics you have salvaged from the frost, sorted by rarity.</span></div>
-        <div class="command"><code>-badges</code><span class="cmd-desc">View the Hall of Honors and track your global milestones.</span></div>
-        <div class="command"><code>-sell [amount] [item]</code><span class="cmd-desc">Exchange bag items and zoo animals for Snowcoins. Beware the progressive Lodge Tax!</span></div>
-        <div class="command"><code>-gift [@user] [amount]</code><span class="cmd-desc">Bestow your wealth upon a fellow traveler (Weekly limit: 10k).</span></div>
-        <div class="command"><code>-trade [@user] [offer] | [request]</code><span class="cmd-desc">Draft a formal contract to exchange beasts with a fellow traveler safely.</span></div>
-        <div class="command"><code>-blackmarket</code><span class="cmd-desc">Seek out the shadowy merchant to buy or sell forbidden Mythical beasts tax-free.</span></div>
-        <div class="command"><code>-leaderboard</code><span class="cmd-desc">View the Hall of Wealth to see the top 10 richest explorers.</span></div>
+        <div class="command"><code>-cellar</code><span class="cmd-desc"><strong>New!</strong> Access the Permafrost Vault to lock coins for 3 days and bypass the bank cap with 8% interest.</span></div>
+        <div class="command"><code>-bag</code><span class="cmd-desc">Inspect the artifacts and relics you have salvaged from the frost, sorted natively by rarity.</span></div>
+        <div class="command"><code>-badges</code><span class="cmd-desc">View the Hall of Honors across 13 strict sub-pages to track your global milestones.</span></div>
+        <div class="command"><code>-sell [amount] [item]</code><span class="cmd-desc">Exchange bag items and zoo animals for Snowcoins. Progressive tax applies to major transactions!</span></div>
+        <div class="command"><code>-gift [@user] [amount]</code><span class="cmd-desc">Bestow your wealth upon a fellow traveler (Weekly transactional safety limit: 10k).</span></div>
+        <div class="command"><code>-trade [@user] [offer] | [request]</code><span class="cmd-desc">Draft a formal contract to exchange beasts or TCG cards safely without cross-trading.</span></div>
+        <div class="command"><code>-blackmarket</code><span class="cmd-desc">Seek out the shadowy merchant to buy or sell forbidden, rare beasts completely tax-free.</span></div>
+        <div class="command"><code>-leaderboard</code><span class="cmd-desc">View the Hall of Wealth to see the top 10 richest explorers across the lands.</span></div>
     </div>
 
     <div class="category">
@@ -139,9 +142,9 @@
         <div class="command"><code>-job</code><span class="cmd-desc">Take on a grueling shift or minor expedition for a heavy payout. (4h cooldown)</span></div>
         <div class="command"><code>-tips</code><span class="cmd-desc">Help Snow clear tables. Having an active pet increases your tips by 25%! (1h cooldown)</span></div>
         <div class="command"><code>-overtime</code><span class="cmd-desc">A skill-based mini-game. Sort the cargo crates in the exact sequence shown! (30m cooldown)</span></div>
-        <div class="command"><code>-beg</code><span class="cmd-desc">Swallow your pride and ask Lodge patrons for spare change. (10m cooldown)</span></div>
+        <div class="command"><code>-beg</code><span class="cmd-desc">Swallow your pride and ask Lodge patrons for spare change with a 50/50 win rate. (10m cooldown)</span></div>
         <div class="command"><code>-crime</code><span class="cmd-desc">Break the law for a massive un-taxed payout... but face heavy fines if caught! (45m cooldown)</span></div>
-        <div class="command"><code>-daily / -monthly</code><span class="cmd-desc">Claim your periodic Lodge stipends.</span></div>
+        <div class="command"><code>-daily / -monthly</code><span class="cmd-desc">Claim your periodic Lodge stipends straight into your active balance.</span></div>
     </div>
 
     <div class="category">
@@ -157,22 +160,51 @@
         <div class="command"><code>-echoes</code><span class="cmd-desc">A mental challenge! Find matching pairs of cards hidden beneath the frost before time runs out.</span></div>
         <div class="command"><code>-scavenge</code><span class="cmd-desc">Sift through deep drifts to unearth exclusive building materials. (30m cooldown)</span></div>
         <div class="command"><code>-build</code><span class="cmd-desc">Use scavenged materials to construct snowmen, igloos, or massive Ice Castles!</span></div>
+        <div class="command"><code>-bartend</code><span class="cmd-desc"><strong>Updated!</strong> Serve up to 15 recipes before a 60s inactivity freeze fires you from the Tavern shift.</span></div>
+        <div class="command"><code>-kitchen</code><span class="cmd-desc"><strong>New Mini-game!</strong> Balance exact macro flavor levels for up to 15 meals to complete your shift.</span></div>
     </div>
 
     <div class="category">
         <h2>🎲 Tavern Betting</h2>
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
-            High-stakes gambling hosted by the colorful cast of Lodge regulars. (Bets: 100 - 5,000 Coins)
+            High-stakes gambling hosted by the colorful cast of Lodge regulars. (Bets wagers: 100 - 5,000 Coins)
         </p>
         <div class="command"><code>-penguin_race</code><span class="cmd-desc">Wager 1,000 coins on four racing penguins. Double your money if your bird wins!</span></div>
         <div class="command"><code>-polar_brawl</code><span class="cmd-desc">Wager 1,000 coins on a playful, animated duel between two heavyweight polar bears.</span></div>
         <div class="command"><code>-fish_toss [mackerel/salmon] [bet]</code><span class="cmd-desc">A 50/50 coinflip hosted by Salty the Seal.</span></div>
-        <div class="command"><code>-ice_deck [bet]</code><span class="cmd-desc">Play Blackjack against the incredibly arrogant Bastian the Emperor Penguin.</span></div>
+        <div class="command"><code>-ice_deck [bet]</code><span class="cmd-desc">Play Blackjack against the incredibly arrogant Bastian the Emperor Penguin. Hits pay 2.5x!</span></div>
         <div class="command"><code>-chamber [bet]</code><span class="cmd-desc">Play a deadly game of frost-roulette against Silas the Fox. Don't pull the Absolute Zero pane!</span></div>
         <div class="command"><code>-frost_tac_toe [bet]</code><span class="cmd-desc">Outsmart Pip the Mouse, a grandmaster strategist, in a game of tic-tac-toe.</span></div>
         <div class="command"><code>-slots [bet]</code><span class="cmd-desc">Spin the Aurora Tumbler while Barnaby the Walrus sleeps. Match 3 for massive payouts!</span></div>
         <div class="command"><code>-mines [bet]</code><span class="cmd-desc">Hire Grog the Cub to dig for gems on a 20-block grid, but avoid the Hidden Fissures!</span></div>
         <div class="command"><code>-frost_breath [bet]</code><span class="cmd-desc">Look at Snow's thermometer and predict if the next gust of wind will be Colder or Warmer.</span></div>
+    </div>
+
+    <div class="category">
+        <h2>🔥 The Abyss</h2>
+        <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
+            High-risk zones containing extreme dangers and unmatched multipliers.
+        </p>
+        <div class="command"><code>-heat_wave</code><span class="cmd-desc"><strong>New Challenge!</strong> Face Ignis the Exile over grid survival rounds as multipliers scale.</span></div>
+        <div class="command"><code>-deep_cast</code><span class="cmd-desc"><strong>New!</strong> Drop lines with Captain Vane down to 600m. Collect nets of items or snap your rigging.</span></div>
+        <div class="command"><code>-frozen_doors</code><span class="cmd-desc"><strong>New!</strong> Venture down alongside Elara to search dungeon rooms. Evade lurking monsters.</span></div>
+        <div class="command"><code>-duel</code><span class="cmd-desc"><strong>New RPG!</strong> Fight Kaelen in a combat match of Strike, Block, and Dodge mechanics.</span></div>
+        <div class="command"><code>-bone_dice</code><span class="cmd-desc"><strong>New!</strong> Wager with Malakai. Rolling Snake Eyes triggers a massive 15.0x coin payout.</span></div>
+        <div class="command"><code>-glaciers</code><span class="cmd-desc"><strong>New Shell Game!</strong> Find the hidden gem from the merchant to secure a 2.5x return.</span></div>
+    </div>
+
+    <div class="category">
+        <h2>🎴 Legends of the Tundra TCG</h2>
+        <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;">
+            Collect trading cards, manage your custom decks, and duel rival players.
+        </p>
+        <div class="command"><code>-pack [type]</code><span class="cmd-desc"><strong>New!</strong> Purchase Frozen, Glacier, or Abyssal booster card packs to open live card drafts.</span></div>
+        <div class="command"><code>-binder</code><span class="cmd-desc"><strong>New!</strong> Browse your fully indexed TCG collection album along with your Frost Fragments.</span></div>
+        <div class="command"><code>-melt [qty] [card]</code><span class="cmd-desc"><strong>New!</strong> Burn extra card copies in the fireplace to extract valuable shards.</span></div>
+        <div class="command"><code>-craftcard</code><span class="cmd-desc"><strong>New!</strong> Exchange your accumulated Frost Fragments for random high-tier cards.</span></div>
+        <div class="command"><code>-mydeck</code><span class="cmd-desc"><strong>New!</strong> Inspect your 5 slotted active battle cards and view their global stats.</span></div>
+        <div class="command"><code>-equip [1-5] [card]</code><span class="cmd-desc"><strong>New!</strong> Assign cards out of your album directly into your primary combat layout slots.</span></div>
+        <div class="command"><code>-cardduel [@user] [bet]</code><span class="cmd-desc"><strong>New Turn-Based Mode!</strong> Strike down enemy cards to win wagers across localized fields.</span></div>
     </div>
 
     <div class="category">
@@ -189,6 +221,7 @@
         <div class="command"><code>-camp</code><span class="cmd-desc">Rest by the fire with your pet to fully restore their stats to 100%. (12h cooldown)</span></div>
         <div class="command"><code>-explore</code><span class="cmd-desc">Send your companion into uncharted lands (like the Abyssal Glacier) to find legendary loot over time.</span></div>
         <div class="command"><code>-cave</code><span class="cmd-desc">A turn-based RPG! Enter the frozen dungeons with your pet to fight feral beasts. Defend carefully!</span></div>
+        <div class="command"><code>-altar</code><span class="cmd-desc"><strong>New Fusion System!</strong> Sacrifice 5 identical creatures to invoke a lifeform of a higher rarity level.</span></div>
     </div>
 
     <div class="category">
@@ -209,7 +242,8 @@
         <div class="command"><code>-premium_status</code><span class="cmd-desc">Check your current VIP membership status! I'll consult the frozen archives and let you know which tier you hold and when it expires.</span></div>
         <div class="command"><code>-prefix [new_prefix]</code><span class="cmd-desc"><strong>Admin Only:</strong> Change the blizzard's signature command! Set a custom command prefix (like !, ?, or snow) for your server. (Max 5 characters).</span></div>
         <div class="command"><code>-reset_prefix</code><span class="cmd-desc"><strong>Admin Only:</strong> Reset your server's custom prefix safely back to the default.</span></div>
-        <div class="command"><code>-weekly / -yearly</code><span class="cmd-desc">Claim your periodic Lodge stipends.</span></div>
+        <div class="command"><code>-color [hex_code]</code><span class="cmd-desc">Alter profile card embed bars using targeted hex codes.</span></div>
+        <div class="command"><code>-weekly / -yearly</code><span class="cmd-desc"><strong>Updated Location:</strong> Claim your periodic Premium-only Lodge reserve stipends safely.</span></div>
     </div>
 </div>
 
