@@ -35,6 +35,16 @@
             color: #0b0e14; /* Dark text for contrast */
         }
 
+        .badge.new {
+            background-color: var(--accent); /* A crisp, noticeable green */
+            color: #0b0e14;
+            margin-left: 0; /* Removes the left margin so it sits flush */
+            margin-right: 8px; /* Adds space between the badge and the text */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.7rem;
+        }
+
         .command-details { font-size: 0.85rem; color: #768390; margin-top: 5px; }
     </style>
 </head>
@@ -44,7 +54,7 @@
     <header>
         <h1>❄️ Snow Bot Official ❄️</h1>
         <p>
-            Welcome to the Lodge! ❄️ <strong>Snow</strong> is your completely free companion, forging a perfect balance between robust server protection and a beautifully immersive, text-based RPG experience. 
+            Welcome to the Lodge! <strong>Snow ❄️</strong> is your completely free companion, forging a perfect balance between robust server protection and a beautifully immersive, text-based RPG experience. 
         </p>
         <p>
             <strong>The frost is calling.</strong> Build your deck in the <em>Legends of the Tundra TCG</em>, tame wandering mythical beasts, roll the bone dice in the shadowy Abyss, or bring your own heroes to life in the Character Vault. With interactive Tavern shifts, tactical duels, and over 120 badges to claim, Snow turns your server into a living winter epic.
@@ -62,15 +72,15 @@
         </p>
         <div class="command"><code>-help</code><span class="cmd-desc">Opens Snow's help manual. Use <code>-help [command]</code> for a deeper look into her powers.</span></div>
         <div class="command"><code>-ping</code><span class="cmd-desc">Check how fast the blizzard winds are blowing (Bot Latency).</span></div>
-        <div class="command"><code>-status</code><span class="cmd-desc"><strong>New!</strong> Ask Chilly the Snowman to display running platform diagnostics, RAM metrics, and system runtime indicators.</span></div>
-        <div class="command"><code>-utility userinfo [@user]</code><span class="cmd-desc"><strong>New!</strong> Consult the server records for detailed account metrics and registration stamps.</span></div>
-        <div class="command"><code>-utility avatar [@user]</code><span class="cmd-desc"><strong>New!</strong> Pulls up a high-resolution canvas copy of a user's profile avatar image.</span></div>
-        <div class="command"><code>-utility banner [@user]</code><span class="cmd-desc"><strong>New!</strong> Extracts a user's decorative profile backdrop asset banner configuration.</span></div>
-        <div class="command"><code>-utility serverinfo</code><span class="cmd-desc"><strong>New!</strong> Displays server diagnostics, milestones, boost configurations, and perk tracking.</span></div>
-        <div class="command"><code>-utility roleinfo [@role]</code><span class="cmd-desc"><strong>New!</strong> Examines the server permissions ledger for a specific rank, displaying color hex codes and active user counts.</span></div>
-        <div class="command"><code>-utility aurora</code><span class="cmd-desc"><strong>New!</strong> Generates a random winter hex color color layout snippet for your profile settings.</span></div>
-        <div class="command"><code>-utility math [formula]</code><span class="cmd-desc"><strong>New!</strong> Runs automated calculator formulas directly inside the message text stream safely.</span></div>
-        <div class="command"><code>-utility choose [A, B, C]</code><span class="cmd-desc"><strong>New!</strong> Randomly selects a parsed text string to settle any disputes or decisions.</span></div>
+        <div class="command"><code>-status</code><span class="cmd-desc"><span class="badge new">New!</span> Ask Chilly the Snowman to display running platform diagnostics, RAM metrics, and system runtime indicators.</span></div>
+        <div class="command"><code>-utility userinfo [@user]</code><span class="cmd-desc"><span class="badge new">New!</span> Consult the server records for detailed account metrics and registration stamps.</span></div>
+        <div class="command"><code>-utility avatar [@user]</code><span class="cmd-desc"><span class="badge new">New!</span> Pulls up a high-resolution canvas copy of a user's profile avatar image.</span></div>
+        <div class="command"><code>-utility banner [@user]</code><span class="cmd-desc"><span class="badge new">New!</span> Extracts a user's decorative profile backdrop asset banner configuration.</span></div>
+        <div class="command"><code>-utility serverinfo</code><span class="cmd-desc"><span class="badge new">New!</span> Displays server diagnostics, milestones, boost configurations, and perk tracking.</span></div>
+        <div class="command"><code>-utility roleinfo [@role]</code><span class="cmd-desc"><span class="badge new">New!</span> Examines the server permissions ledger for a specific rank, displaying color hex codes and active user counts.</span></div>
+        <div class="command"><code>-utility aurora</code><span class="cmd-desc"><span class="badge new">New!</span> Generates a random winter hex color color layout snippet for your profile settings.</span></div>
+        <div class="command"><code>-utility math [formula]</code><span class="cmd-desc"><span class="badge new">New!</span> Runs automated calculator formulas directly inside the message text stream safely.</span></div>
+        <div class="command"><code>-utility choose [A, B, C]</code><span class="cmd-desc"><span class="badge new">New!</span> Randomly selects a parsed text string to settle any disputes or decisions.</span></div>
     </div>
 
     <div class="category">
@@ -81,7 +91,7 @@
         <div class="command"><code>-info website</code><span class="cmd-desc">Receive a map through the storm straight to this official website!</span></div>
         <div class="command"><code>-info server</code><span class="cmd-desc">Summon a direct path to the official Support Lodge discord server.</span></div>
         <div class="command"><code>-info vote</code><span class="cmd-desc">Support the blizzard by leaving an upvote on my official bot lists!</span></div>
-        <div class="command"><code>-info invite</code><span class="cmd-desc"><strong>New!</strong> Provides authorization paths to expand Snow's blizzard to foreign servers.</span></div>
+        <div class="command"><code>-info invite</code><span class="cmd-desc"><span class="badge new">New!</span> Provides authorization paths to expand Snow's blizzard to foreign servers.</span></div>
     </div>
 
     <div class="category">
@@ -98,10 +108,10 @@
         <div class="command"><code>-mod ban @user [reason]</code><span class="cmd-desc">Puts a member on 'Permanent Ice'. Freezes them completely out of the server.</span></div>
         <div class="command"><code>-mod timeout @user [mins] [reason]</code><span class="cmd-desc">Flash-freezes a user's ability to chat or react for a set amount of time.</span></div>
         <div class="command"><code>-mod untimeout @user</code><span class="cmd-desc">Thaw out a flash-frozen user early. Rules dictate only the original moderator or an admin can thaw them!</span></div>
-        <div class="command"><code>-mod lock [#channel]</code><span class="cmd-desc"><strong>New!</strong> Flash-freezes a text channel's default role so standard travelers cannot send messages.</span></div>
-        <div class="command"><code>-mod unlock [#channel]</code><span class="cmd-desc"><strong>New!</strong> Thaws an individual text channel, letting travelers chat safely once the ice has been broken.</span></div>
-        <div class="command"><code>-mod slowmode [seconds]</code><span class="cmd-desc"><strong>New!</strong> Regulates text traffic by setting a precise chat cooldown interval on a room.</span></div>
-        <div class="command"><code>-mod lockdown [on/off]</code><span class="cmd-desc"><strong>New!</strong> Emergency anti-raid procedure! Loops through every single text room and freezes or thaws the entire server at once.</span></div>
+        <div class="command"><code>-mod lock [#channel]</code><span class="cmd-desc"><span class="badge new">New!</span> Flash-freezes a text channel's default role so standard travelers cannot send messages.</span></div>
+        <div class="command"><code>-mod unlock [#channel]</code><span class="cmd-desc"><span class="badge new">New!</span> Thaws an individual text channel, letting travelers chat safely once the ice has been broken.</span></div>
+        <div class="command"><code>-mod slowmode [seconds]</code><span class="cmd-desc"><span class="badge new">New!</span> Regulates text traffic by setting a precise chat cooldown interval on a room.</span></div>
+        <div class="command"><code>-mod lockdown [on/off]</code><span class="cmd-desc"><span class="badge new">New!</span> Emergency anti-raid procedure! Loops through every single text room and freezes or thaws the entire server at once.</span></div>
         <div class="command"><code>-vc mute @user</code><span class="cmd-desc">'Flash-freeze' a user's microphone so they cannot speak in voice channels.</span></div>
         <div class="command"><code>-vc unmute @user</code><span class="cmd-desc">Melt the ice from a user's microphone to let their voice carry again.</span></div>
         <div class="command"><code>-vc deafen @user</code><span class="cmd-desc">Encase a user's headset in solid ice so they cannot hear any chatter in the channel.</span></div>
@@ -117,7 +127,7 @@
             Freeze your favorite characters into Snow's memory and let them speak through the blizzard!
         </p>
         <div class="command"><code>-char register [name] [file]</code><span class="cmd-desc">Invite a new friend into my gallery! Your frosty vault can hold a maximum of 5 characters (10 for Premium).</span></div>
-        <div class="command"><code>-char edit [name] [new_name] [new_avatar]</code><span class="cmd-desc"><strong>New!</strong> <strong>Transfigure:</strong> Update a character's name or swap their portrait. You can change just the name, just the picture, or both at once! Features smart search so exact names aren't required.</span></div>
+        <div class="command"><code>-char edit [name] [new_name] [new_avatar]</code><span class="cmd-desc"><span class="badge new">New!</span> <strong>Transfigure:</strong> Update a character's name or swap their portrait. You can change just the name, just the picture, or both at once! Features smart search so exact names aren't required.</span></div>
         <div class="command"><code>-char delete [name]</code><span class="cmd-desc">Shatter a character's frozen memory. Includes a 45-second safety loop to prevent accidental slips.</span></div>
         <div class="command"><code>-char force_delete [@user] [name]</code><span class="cmd-desc"><strong>Admin Only:</strong> Bypass a user's frozen vault and instantly shatter an inappropriate roleplay character.</span></div>
         <div class="command"><code>-char list</code><span class="cmd-desc">Privately peek into your vault to see a list of all your currently saved personas and vault capacity.</span></div>
@@ -242,9 +252,9 @@
         <div class="command"><code>-storytime</code><span class="cmd-desc">Snow reads a legend of the tundra. Your choices shape the ending and determine your reward.</span></div>
         <div class="command"><code>-whisper</code><span class="cmd-desc">Pay the Shadowy Merchant 500 coins to hear dark, cryptic rumors about the Lodge and its inhabitants.</span></div>
         <div class="command"><code>-log</code><span class="cmd-desc">Read the day's entry from Snow’s personal travel journal.</span></div>
-        <div class="command"><code>-item_info [name]</code><span class="cmd-desc"><strong>New!</strong> Searches the directory to reveal an item's cinematic lore description, tier ranking, and exact acquisition paths.</span></div>
-        <div class="command"><code>-pet_info [name]</code><span class="cmd-desc"><strong>New!</strong> Look up any beast or creature to view its family history notes, rarity tier matrix, and precise ecosystem spawn points.</span></div>
-        <div class="command"><code>-card_info [name]</code><span class="cmd-desc"><strong>New!</strong> Pull down a card entry from the TCG binders to review its card class backstory, quality matrix, and pack sources.</span></div>
+        <div class="command"><code>-item_info [name]</code><span class="cmd-desc"><span class="badge new">New!</span> Searches the directory to reveal an item's cinematic lore description, tier ranking, and exact acquisition paths.</span></div>
+        <div class="command"><code>-pet_info [name]</code><span class="cmd-desc"><span class="badge new">New!</span> Look up any beast or creature to view its family history notes, rarity tier matrix, and precise ecosystem spawn points.</span></div>
+        <div class="command"><code>-card_info [name]</code><span class="cmd-desc"><span class="badge new">New!</span> Pull down a card entry from the TCG binders to review its card class backstory, quality matrix, and pack sources.</span></div>
     </div>
 
     <div class="category">
@@ -263,10 +273,9 @@
     <div class="category" style="text-align: center; padding: 40px 20px; border-color: var(--accent);">
         <h2 style="border-bottom: none; margin-bottom: 15px; font-size: 2rem;">📖 The Legend of Snow</h2>
         <p style="max-width: 700px; margin: 0 auto 15px auto; font-size: 1.05rem;">
-            Step out of the cold, traveler, the hearth is warm. ❄️ <strong>Snow</strong> is more than just a bot; she is the Warden of the Tundra, a powerful and completely free companion. She stands ready to shield your server from the howling winds of chaos, all while guiding your community through a breathtaking, immersive RPG adventure.
-        </p>
+            Step out of the cold, traveler, and take a seat by the hearth. Behind the wooden bar stands <strong>Snow</strong>, the cheery and unassuming Tavern Keeper. With her fluffy silver-white hair and a blue ribbon tied neatly beneath an oversized tan cardigan, she is the welcoming heart of the community. Whether she is wiping down the counter, warming her hands around a steaming mug of tea, or spoiling her immortal pet snowman, Chilly, Snow ensures every traveler feels perfectly safe from the howling winds outside.        </p>
         <p style="max-width: 700px; margin: 0 auto; font-size: 1.05rem;">
-            <strong>What awaits beyond the Lodge doors?</strong> A living, breathing world of frost and magic. With Snow as your guide, you can track untamed spirits across the ice, duel for your life in the Abyss, and trade legends in the <em>Tundra TCG</em>. Whether you are working an honest shift in the Tavern, bringing your own stories to life in the Character Vault, or earning over 120 unique badges for the Hall of Honors, Snow weaves a beautiful winter epic right into your chat.
+            But the oldest explorers whisper a different tale when she is out of earshot. Beneath her sweet, sugary exterior lies a deeply secretive and calculating mind—one that commands the terrifying monsters of the Abyss with quiet, merciless authority. They say she hasn't aged a single day in decades. And the most chilling rumor of all? The longer you sit by her fire, playing her games and drinking her tea, the more she slowly feeds upon your memories, taking fragments of your past as the true price for surviving the winter.
         </p>
     </div>
 </div>
