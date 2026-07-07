@@ -118,7 +118,7 @@
             <li><strong>Discord Server (Guild) IDs and Channel IDs:</strong> Used to configure server-specific settings, such as moderation log channels and custom command prefixes.</li>
             <li><strong>Image URLs:</strong> When a user uploads an image for a custom character avatar, the Discord attachment URL is stored.</li>
             <li><strong>Virtual Economy & RPG Data:</strong> We store virtual currency balances (Snowcoins), inventory items, game statistics, badge progression, TCG card collections, estate properties, farming data, and virtual pet data linked to your User ID.</li>
-            <li><strong>Interaction Timestamps:</strong> We record the time of specific user interactions (e.g., claiming daily rewards, interacting with virtual pets) to enforce fair-use cooldowns.</li>
+            <li><strong>Interaction Timestamps:</strong> We record the precise execution times of user interactions and commands (e.g., claiming stipends, interacting with virtual pets, or playing tavern games) to enforce fair-use limits and manage global command cooldowns.</li>
             <li><strong>Transient Message Data:</strong> The Bot requires the "Message Content Intent" to read and execute text commands. Message content is processed temporarily in memory to execute commands and is not persistently stored, except when explicitly saved as a custom character name or recorded in a server's configured moderation log.</li>
             <li><strong>Support Ticket Transcripts (Support Lodge Only):</strong> When a user opens a support ticket in our official server, a full HTML transcript of the conversation is generated and archived for staff review.</li>
             <li><strong>Premium Status Data:</strong> If you acquire premium features, we store your Discord User ID and the expiration date of your premium status in our database to ensure continuous access to your perks.</li>
@@ -145,7 +145,7 @@
 
         <h2>6. Data Retention and Deletion</h2>
         <ul>
-            <li><strong>User Control:</strong> Users can delete their stored character data at any time using the <code>/char delete</code> command.</li>
+            <li><strong>User Control:</strong> Users maintain total control over their personal vault records. You can dynamically modify character profiles using the <code>/char edit</code> command or permanently shatter stored character assets at any time using the <code>/char delete</code> command.</li>
             <li><strong>Server Control:</strong> Server administrators can clear server-specific settings (like mod-logs) by disabling the feature via commands.</li>
             <li><strong>Right to Erasure:</strong> If you wish to have all your data manually removed from the database, you may contact the developer directly.</li>
         </ul>
