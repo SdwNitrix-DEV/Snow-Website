@@ -45,6 +45,16 @@
             font-size: 0.7rem;
         }
 
+        .badge.updated {
+            background-color: #5865F2; /* A crisp Discord blurple (or change to your own hex/var) */
+            color: #ffffff; /* White text for better contrast against dark backgrounds */
+            margin-left: 0; 
+            margin-right: 8px; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.7rem;
+        }
+
         .command-details { font-size: 0.85rem; color: #768390; margin-top: 5px; }
     </style>
 </head>
@@ -81,7 +91,7 @@
         <div class="command"><code>-utility roleinfo [@role]</code><span class="cmd-desc">Examines the server permissions ledger for a specific rank, displaying color hex codes and active user counts.</span></div>
         <div class="command"><code>-utility aurora</code><span class="cmd-desc">Generates a random winter hex color color layout snippet for your profile settings.</span></div>
         <div class="command"><code>-utility math [formula]</code><span class="cmd-desc">Runs automated calculator formulas directly inside the message text stream safely.</span></div>
-        <div class="command"><code>-utility choose [A, B, C]</code><span class="cmd-desc">Randomly selects a parsed text string to settle any disputes or decisions.</span></div>
+        <div class="command"><code>-utility choose [A, B, C]</code><span class="cmd-desc"><span class="badge updated">Updated!</span>Randomly selects a parsed text string to settle any disputes or decisions.</span></div>
     </div>
 
     <div class="category">
@@ -102,7 +112,8 @@
         </p>
         <p style="font-size: 0.85rem; color: #768390; margin-top: -5px; margin-bottom: 20px;"><span style="color: var(--accent); font-weight: bold;">❄️ Notice:</span> Keep Snow's role <strong>above</strong> other members in your Role List!</p>
 
-        <div class="command"><code>-mod logs [#channel]</code><span class="cmd-desc"><span class="badge new">New!</span> Opens the interactive Audit Blizzard control panel to set your log destination and toggle specific event trackers.</span></div>        <div class="command"><code>-mod say [message]</code><span class="cmd-desc">Let Snow be your voice! Makes the bot repeat your message and hides your trigger.</span></div>
+        <div class="command"><code>-mod logs [#channel]</code><span class="cmd-desc"><span class="badge updated">Updated!</span> Opens the interactive Audit Blizzard control panel to set your log destination and toggle specific event trackers.</span></div>
+        <div class="command"><code>-mod say [message]</code><span class="cmd-desc">Let Snow be your voice! Makes the bot repeat your message and hides your trigger.</span></div>
         <div class="command"><code>-mod clear [amount]</code><span class="cmd-desc">Sweeps away up to 100 messy messages like a fresh snowstorm.</span></div>
         <div class="command"><code>-mod kick @user [reason]</code><span class="cmd-desc">Escorts a rule-breaking member out of the lodge and back into the cold.</span></div>
         <div class="command"><code>-mod ban @user [reason]</code><span class="cmd-desc">Puts a member on 'Permanent Ice'. Freezes them completely out of the server.</span></div>
